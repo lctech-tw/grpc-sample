@@ -17,13 +17,13 @@ const { Greeter } = grpc.loadPackageDefinition(packageDefinition).helloworld;
 const client = new Greeter(
   // 本地開發環境的範例
 
-  "localhost:50051",
-  grpc.credentials.createInsecure()
+  // "localhost:50051",
+  // grpc.credentials.createInsecure()
   
   // cloud run 的範例
   
-  // "grpc-service-112614625973.asia-east1.run.app",
-  // grpc.credentials.createSsl()
+  "grpc-service-112614625973.asia-east1.run.app",
+  grpc.credentials.createSsl()
 
   // gclb 的範例
   // "test.jkf.tips",

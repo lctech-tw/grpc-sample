@@ -6,12 +6,12 @@
 gcloud auth configure-docker
 docker buildx create --use --name multiplatform-builder
 docker buildx build --platform linux/amd64,linux/arm64 \
-    -t asia.gcr.io/lc-hogwarts/greeter-server:v1 \
+    -t asia.gcr.io/lc-hogwarts/greeter-server:v2 \
     --push .
 
 # docker push asia.gcr.io/lc-hogwarts/greeter-server:v1
 gcloud run deploy grpc-service \
-    --image asia.gcr.io/lc-hogwarts/greeter-server:v1 \
+    --image asia.gcr.io/lc-hogwarts/greeter-server:v2 \
     --platform managed \
     --region asia-east1 \
     --allow-unauthenticated \
