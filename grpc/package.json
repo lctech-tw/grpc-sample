@@ -1,7 +1,12 @@
 {
   "dependencies": {
+    "@google-cloud/opentelemetry-cloud-trace-exporter": "^2.4.1",
     "@grpc/grpc-js": "^1.13.4",
     "@grpc/proto-loader": "^0.7.15",
+    "@opentelemetry/auto-instrumentations-node": "^0.60.0",
+    "@opentelemetry/instrumentation-grpc": "^0.202.0",
+    "@opentelemetry/sdk-node": "^0.202.0",
+    "@opentelemetry/sdk-trace-base": "^1.26.0",
     "minimist": "^1.2.8"
   }
 }
