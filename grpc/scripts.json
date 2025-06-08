@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "start:server": "node greeter_server.js",
+    "start:client": "node greeter_client.js"
+  }
+}
